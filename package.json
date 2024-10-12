@@ -54,5 +54,8 @@
     "pg-hstore": "^2.3.4",
     "react-router-dom": "^6.26.2",
     "sequelize": "^6.37.3"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }

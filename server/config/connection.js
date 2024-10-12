@@ -12,7 +12,7 @@ const sequelize =
           }
         }
       })
-
+// development mode, local db
     : new Sequelize(
         process.env.DB_NAME,
         process.env.DB_USER,
@@ -24,3 +24,6 @@ const sequelize =
       );
 
 export default sequelize;
+
+
+// heroku config:set PGSSLMODE=require

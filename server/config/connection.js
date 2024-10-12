@@ -3,7 +3,7 @@ import "dotenv/config";
 
 const sequelize =
   process.env.NODE_ENV === "production"
-    ? new Sequelize(process.env.DB_URL, {
+    ? new Sequelize(process.env.DATABASE_URL, {
         dialect: "postgres",
       })
 

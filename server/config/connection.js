@@ -5,6 +5,9 @@ const sequelize =
   process.env.NODE_ENV === "production"
     ? new Sequelize(process.env.DATABASE_URL, {
         dialect: "postgres",
+        ssl: {
+          rejectUnauthorized: false
+        }
       })
 
     : new Sequelize(
